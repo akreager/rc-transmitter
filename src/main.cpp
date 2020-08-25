@@ -29,9 +29,9 @@
 RF24 radio(CE_PIN, CSN_PIN);
 const byte address[6] = "00001";
 
-//The display uses hardware SPI1, plus #6 & #3
-#define TFT_CS 6
-#define TFT_DC 3
+//The display uses hardware SPI1, plus #0 & #2
+#define TFT_CS 0
+#define TFT_DC 2
 Adafruit_ILI9341 tft = Adafruit_ILI9341(&SPI1, TFT_DC, TFT_CS);
 
 //Custom color definitions
