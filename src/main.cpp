@@ -57,6 +57,8 @@ int oldCurrentMotor2;
 struct dataPackage {
   byte throttle;
   byte steering;
+  byte flag_motor_stop;
+
 };
 dataPackage data;
 
