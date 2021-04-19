@@ -10,12 +10,12 @@
 byte range_steering_left = 0;      //full left turn
 byte range_steering_right = 127;   //full right turn
 byte range_steering_center = 64;   //steering stop
-byte deadZone_steering = 5;        //wheel deadzone, return center value for center +- deadzone(in steps of 1/1024)
+byte deadZone_wheel = 5;           //wheel deadzone, return center value for center +- deadzone(in steps of 1/1024)
 
 byte range_throttle_reverse = 0;   //full throttle reverse
 byte range_throttle_forward = 127; //full throttle forward
 byte range_throttle_center = 64;   //throttle stop
-byte deadZone_throttle = 5;        //trigger deadzone, return center value for center +- deadzone(in steps of 1/1024)
+byte deadZone_trigger = 5;         //trigger deadzone, return center value for center +- deadzone(in steps of 1/1024)
 
 byte steering;
 byte throttle;
