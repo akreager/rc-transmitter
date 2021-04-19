@@ -1,3 +1,7 @@
+/*
+ * Based on instructable by Joram_
+ * https://www.instructables.com/Easy-Analog-Joystick-Calibration-and-Centering/
+ */
 //Input pins
 #define analog_input_wheel A0
 #define analog_input_trigger A1
