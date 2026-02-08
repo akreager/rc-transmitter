@@ -1,3 +1,16 @@
-.pio
-.vscode
-.build_errors
+# PlatformIO (legacy)
+.pio/
+.vscode/
+
+# Arduino IDE
+build/
+*.elf
+*.hex
+*.bin
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Temporary exports
+dir_list.csv
