@@ -101,8 +101,10 @@ Install via Arduino IDE Library Manager:
 - [RF24](https://github.com/tmrh20/RF24/) (TMRh20 fork)
 - [Adafruit GFX Library](https://github.com/adafruit/Adafruit-GFX-Library)
 - [Adafruit ILI9341](https://github.com/adafruit/Adafruit_ILI9341)
-- [Adafruit TouchScreen](https://github.com/adafruit/Adafruit_TouchScreen)
 - [Adafruit BusIO](https://github.com/adafruit/Adafruit_BusIO)
+
+Bundled with the Teensy board package:
+- TouchScreen — included in `{teensy_package}/libraries/TouchScreen`, API-compatible with [Adafruit TouchScreen](https://github.com/adafruit/Adafruit_TouchScreen)
 
 Receiver also requires:
 - [RoboClaw Arduino Library](https://github.com/basicmicro/roboclaw_arduino_library)

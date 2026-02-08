@@ -15,7 +15,7 @@
   Libraries:
     - RF24 (TMRh20 fork)
     - Adafruit GFX + ILI9341
-    - Adafruit TouchScreen
+    - Teensy (bundled) TouchScreen
 
   Developed with assistance from Claude (Anthropic).
 */
