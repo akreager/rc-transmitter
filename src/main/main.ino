@@ -56,7 +56,7 @@ int oldCurrentMotor2;
 struct dataPackage {
   byte throttle;
   byte steering;
-  byte flag_motor_stop;
+  bool data_motor_stop;
 };
 dataPackage data;
 
@@ -72,6 +72,7 @@ struct ackPackage {
   byte lowIM1;
   byte highIM2;
   byte lowIM2;
+  bool ack_motor_stop;
 };
 ackPackage ack;
 
