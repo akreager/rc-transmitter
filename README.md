@@ -27,7 +27,7 @@ A general-purpose RC transmitter designed to control multiple vehicles by swappi
 - nRF24L01+ radio module (SPI0)
 - Analog joystick (steering + throttle)
 
-### Receiver (test rover)
+### Receiver ([Rover Test Platform](https://github.com/akreager/roverTest))
 - Arduino Mega
 - nRF24L01+ radio module
 - Basicmicro RoboClaw motor controller
