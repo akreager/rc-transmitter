@@ -15,7 +15,7 @@
   Libraries:
     - RF24 (TMRh20 fork)
     - Adafruit GFX + ILI9341
-    - Teensy (bundled) TouchScreen
+    - Adafruit TouchScreen
 
   Developed with assistance from Claude (Anthropic).
 */
@@ -64,6 +64,20 @@ struct ackPackage {
 ackPackage ack;
 
 // ============================================================
+// ANALOG INPUT STATE
+// ============================================================
+// Index 0 = A0 (steering pin), Index 1 = A1 (throttle pin)
+// Vehicle config maps these to functions.
+AnalogCalData analogInputs[NUM_ANALOG_INPUTS] = {
+  { JOY_STEERING, 512, 0, 1023, ACAL_DEFAULT_DEADZONE, false },
+  { JOY_THROTTLE, 512, 0, 1023, ACAL_DEFAULT_DEADZONE, false }
+};
+
+// Active calibration state
+int aCalInputIdx = -1;                // Which input is being calibrated (-1 = none)
+AnalogCalStep aCalStep = ACAL_IDLE;
+
+// ============================================================
 // TELEMETRY STATE
 // ============================================================
 unsigned int rawBatt = 0;
@@ -79,9 +93,24 @@ bool motorStopActive = true;          // M-stop is ON by default (motors disable
 
 // Touch state (managed by touchInput.ino)
 TouchState touchState = TOUCH_IDLE;
-int16_t touchX = 0;
+int16_t touchX = 0;                   // Mapped screen coordinates
 int16_t touchY = 0;
+int16_t rawTouchX = 0;                // Raw resistive values (for calibration)
+int16_t rawTouchY = 0;
 unsigned long lastTouchTime = 0;
+bool tapDetected = false;             // Set on each new press, consumed by listeners
+
+// Runtime touch calibration values (can be updated by calibration routine)
+int tsMinX = TS_DEFAULT_MINX;
+int tsMinY = TS_DEFAULT_MINY;
+int tsMaxX = TS_DEFAULT_MAXX;
+int tsMaxY = TS_DEFAULT_MAXY;
+
+// Touch calibration state
+TouchCalibState tCalState = TCAL_IDLE;
+int tCalTarget = 0;                   // Which target we're on (0 to NUM_TARGETS-1)
+int tCalRawX[TCAL_NUM_TARGETS];       // Recorded raw X for each target
+int tCalRawY[TCAL_NUM_TARGETS];       // Recorded raw Y for each target
 
 // Screen & button state (managed by screenManager.ino)
 ScreenID currentScreen = SCREEN_HOME;
@@ -130,8 +159,8 @@ void loop() {
   touchUpdate();
 
   // 2. Read joystick and set motor stop flag
-  data.throttle = map(analogRead(JOY_THROTTLE), 0, 1023, 127, 0);
-  data.steering = map(analogRead(JOY_STEERING), 0, 1023, 0, 127);
+  data.steering = readCalibratedInput(0);   // A0
+  data.throttle = readCalibratedInput(1);   // A1
   data.data_motor_stop = motorStopActive;
 
   // 3. Transmit and receive acknowledge

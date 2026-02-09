@@ -26,21 +26,46 @@
 #define XP  28    // D28, digital
 #define YM  29    // D29, digital
 
-#define TS_RESISTANCE 300   // Ohms across X plate (measure with multimeter)
+#define TS_RESISTANCE 314   // Ohms across X plate (measured with multimeter)
 
-// --- Touch Calibration ---
-// These are from the test sketches. Re-run calibration if you
-// change orientation or if touch coordinates seem wrong.
-#define TS_MINX       150
-#define TS_MINY       120
-#define TS_MAXX       920
-#define TS_MAXY       940
-#define MINPRESSURE   10
-#define MAXPRESSURE   1000
+// --- Touch Calibration Defaults ---
+// These are starting values. Runtime variables (tsMinX, etc.)
+// can be updated by the touch calibration routine.
+#define TS_DEFAULT_MINX   150
+#define TS_DEFAULT_MINY   120
+#define TS_DEFAULT_MAXX   920
+#define TS_DEFAULT_MAXY   940
+#define MINPRESSURE       10
+#define MAXPRESSURE       1000
 
 // --- Joystick ---
 #define JOY_STEERING  A0    // D14
 #define JOY_THROTTLE  A1    // D15
+
+// --- Analog Input Calibration ---
+// Generic calibration data per analog pin.
+// Vehicle config maps pins to functions (e.g., A0 → steering).
+#define NUM_ANALOG_INPUTS   2
+#define ACAL_SAMPLES        10    // Number of reads to average per sample
+#define ACAL_SAMPLE_DELAY   5     // ms between reads
+#define ACAL_DEFAULT_DEADZONE 5   // Raw ADC units around center
+
+struct AnalogCalData {
+  uint8_t pin;            // Analog pin number
+  long calCenter;         // Calibrated center (raw ADC average)
+  long calMin;            // Calibrated min endpoint (raw ADC average)
+  long calMax;            // Calibrated max endpoint (raw ADC average)
+  byte deadZone;          // Dead zone around center (raw ADC units)
+  bool calibrated;        // Has this input been through calibration?
+};
+
+enum AnalogCalStep {
+  ACAL_IDLE,              // Not calibrating
+  ACAL_CENTER,            // Waiting for user to position center
+  ACAL_MIN,               // Waiting for user to position minimum
+  ACAL_MAX,               // Waiting for user to position maximum
+  ACAL_DONE               // Calibration complete, showing results
+};
 
 // ============================================================
 // DISPLAY CONSTANTS
@@ -76,9 +101,28 @@ enum TouchState {
   TOUCH_WAIT_RELEASE    // Waiting for finger lift before accepting new input
 };
 
+// --- Touch Calibration State ---
+enum TouchCalibState {
+  TCAL_IDLE,            // Not calibrating
+  TCAL_WAIT_TARGET,     // Waiting for user to tap current target
+  TCAL_DONE             // All targets collected, showing results
+};
+
+#define TCAL_NUM_TARGETS  3
+// Target positions in screen pixels (where crosshairs are drawn)
+// Spread across the screen for best calibration accuracy
+#define TCAL_TARGET_0_X   20    // Near top-left (below header)
+#define TCAL_TARGET_0_Y   60
+#define TCAL_TARGET_1_X   220   // Near bottom-right (above back button)
+#define TCAL_TARGET_1_Y   240
+#define TCAL_TARGET_2_X   120   // Center (verification point)
+#define TCAL_TARGET_2_Y   160
+
 // --- Screen IDs ---
 enum ScreenID {
   SCREEN_HOME,
+  SCREEN_SETUP,
+  SCREEN_CALIBRATE_TOUCH,
   SCREEN_CALIBRATE_THROTTLE,
   SCREEN_CALIBRATE_STEERING,
   SCREEN_COUNT
@@ -97,12 +141,25 @@ struct Button {
 #define MAX_BUTTONS 6
 
 // ============================================================
-// M-STOP BUTTON LAYOUT
+// HOME SCREEN BUTTON LAYOUT
 // ============================================================
+#define BTN_SHADOW    4
+
+// M-Stop button
 #define MSTOP_X       12
-#define MSTOP_Y       220
+#define MSTOP_Y       200
 #define MSTOP_W       216
 #define MSTOP_H       45
-#define MSTOP_SHADOW  4
+
+// Setup button
+#define SETUP_X       12
+#define SETUP_Y       258
+#define SETUP_W       216
+#define SETUP_H       45
+
+// Generic menu button (used on setup screen, etc.)
+#define MENU_BTN_X    12
+#define MENU_BTN_W    216
+#define MENU_BTN_H    40
 
 #endif // CONFIG_H

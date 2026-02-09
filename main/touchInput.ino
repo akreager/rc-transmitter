@@ -20,6 +20,9 @@
 int releaseCount = 0;
 
 void touchUpdate() {
+  // tapDetected is NOT cleared here — it persists until consumed
+  // by a screen update function (e.g., touch calibration).
+
   TSPoint p = ts.getPoint();
 
   // NOTE: If your touch pins are shared with other SPI/digital
@@ -53,6 +56,15 @@ void touchUpdate() {
 
         touchState = TOUCH_PRESSED;
         lastTouchTime = now;
+
+        // Store raw values first (needed by touch calibration)
+        rawTouchX = p.x;
+        rawTouchY = p.y;
+
+        // Set tap flag (consumed by calibration or other listeners)
+        tapDetected = true;
+
+        // Map to screen coordinates
         mapTouchCoords(p);
 
         // Fire button check on this single frame
@@ -91,9 +103,10 @@ void touchUpdate() {
 
 void mapTouchCoords(TSPoint &p) {
   // Map raw resistive values to pixel coordinates.
+  // Uses runtime calibration variables (updated by touch cal routine).
   // Rotation 2 = 180° from default, so axes are inverted.
-  touchX = map(p.x, TS_MINX, TS_MAXX, SCREEN_W, 0);
-  touchY = map(p.y, TS_MINY, TS_MAXY, SCREEN_H, 0);
+  touchX = map(p.x, tsMinX, tsMaxX, SCREEN_W, 0);
+  touchY = map(p.y, tsMinY, tsMaxY, SCREEN_H, 0);
 
   // Clamp to screen bounds
   touchX = constrain(touchX, 0, SCREEN_W - 1);

@@ -91,6 +91,16 @@ void changeScreen(ScreenID screen) {
       setupHomeButtons();
       break;
 
+    case SCREEN_SETUP:
+      drawSetupScreen();
+      setupSetupButtons();
+      break;
+
+    case SCREEN_CALIBRATE_TOUCH:
+      drawTouchCalibScreen();
+      setupTouchCalibButtons();
+      break;
+
     case SCREEN_CALIBRATE_THROTTLE:
       drawThrottleCalibScreen();
       setupThrottleCalibButtons();
@@ -110,6 +120,10 @@ void changeScreen(ScreenID screen) {
   // from the button press, this covers cases where changeScreen()
   // is called from code (e.g., a timeout or failsafe).
   requireRelease();
+
+  // 5. Clear any pending tap flag so the previous screen's tap
+  // doesn't get consumed by the new screen's update function.
+  tapDetected = false;
 }
 
 // --- Per-Frame Screen Updates ---
@@ -121,12 +135,20 @@ void screenUpdate() {
       updateHomeScreen();
       break;
 
+    case SCREEN_SETUP:
+      // Static menu, no per-frame updates needed
+      break;
+
+    case SCREEN_CALIBRATE_TOUCH:
+      updateTouchCalibScreen();
+      break;
+
     case SCREEN_CALIBRATE_THROTTLE:
-      // TODO: show live joystick value during calibration
+      updateAnalogCalScreen();
       break;
 
     case SCREEN_CALIBRATE_STEERING:
-      // TODO: show live joystick value during calibration
+      updateAnalogCalScreen();
       break;
 
     default:
