@@ -1,16 +1,68 @@
-# PlatformIO (legacy)
+# ============================================================
+# RC Transmitter .gitignore
+# Arduino IDE firmware + KiCad 9 PCB design
+# ============================================================
+
+# --- Arduino IDE ---
+# Build output directory
+build/
+
+# --- PlatformIO (legacy, removed) ---
 .pio/
 .vscode/
 
-# Arduino IDE
-build/
-*.elf
-*.hex
-*.bin
+# --- KiCad 9 ---
+# Backups
+*-backups/
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*~
 
-# OS junk
+# Autosave files
+\#auto_saved_files\#
+_autosave-*
+
+# Local project settings (per-user window positions, etc.)
+*.kicad_prl
+
+# Netlists (generated from schematic)
+*.net
+
+# Autorouter files (exported from PCBnew)
+*.dsn
+*.ses
+
+# Fabrication outputs — regenerate from source
+# Uncomment if you want to track gerbers in git:
+# !production/
+# gerbers/
+# *.gbr
+# *.drl
+# *.gbrjob
+
+# DRC/ERC reports (generated, not source)
+*.erc
+*.drc
+
+# Legacy KiCad file formats
+*-cache.lib
+*-rescue.lib
+*.sch-bak
+*.lib-bak
+fp-info-cache
+
+# Lock files
+*.lck
+
+# --- 3D Models (track .step, ignore large mesh files) ---
+*.wrl
+
+# --- OS junk ---
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Temporary exports
+# --- Misc ---
 dir_list.csv
