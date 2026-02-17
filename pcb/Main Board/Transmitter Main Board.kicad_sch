@@ -4895,7 +4895,7 @@
 		(uuid "031b51b2-98ac-4e3d-9736-3540785ce598")
 	)
 	(label "BACKLIGHT"
-		(at 30.48 38.1 180)
+		(at 30.48 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5135,7 +5135,7 @@
 		(uuid "88f921fa-4129-4f61-b501-09b73d975861")
 	)
 	(label "TFT_IRQ"
-		(at 30.48 40.64 180)
+		(at 30.48 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6810,16 +6810,16 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 146.05 24.13 0)
+		(at 146.05 26.67 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "89b7325b-5236-49de-b8fd-beb594f86774")
 		(property "Reference" "J1"
-			(at 147.32 24.1299 0)
+			(at 147.32 26.6701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6828,7 +6828,7 @@
 			)
 		)
 		(property "Value" "Battery"
-			(at 147.32 26.6699 0)
+			(at 147.32 24.1301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6837,7 +6837,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
-			(at 146.05 24.13 0)
+			(at 146.05 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6846,7 +6846,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 24.13 0)
+			(at 146.05 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6855,7 +6855,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 146.05 24.13 0)
+			(at 146.05 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)

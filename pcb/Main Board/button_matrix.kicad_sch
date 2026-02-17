@@ -177,261 +177,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LED:SK6812"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 5.08 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right bottom)
-				)
-			)
-			(property "Value" "SK6812"
-				(at 1.27 -5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-				(at 2.54 -9.525 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RGB LED with integrated controller"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "RGB LED NeoPixel addressable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED*SK6812*PLCC*5.0x5.0mm*P3.2mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SK6812_0_0"
-				(text "RGB"
-					(at 2.286 -4.191 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-			)
-			(symbol "SK6812_0_1"
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "SK6812_1_1"
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "DOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -582,12 +327,206 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Transmitter Symbol Library:4960"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "IC"
+				(at -1.778 8.382 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "4960"
+				(at -1.778 5.842 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "4960"
+				(at 24.13 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+				(at 24.13 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Adafruit Accessories NeoPixel Reverse Mount RGB LEDs - 10 Pack of SK6812-E"
+				(at -13.208 10.668 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.88"
+				(at 24.13 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "485-4960"
+				(at 24.13 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Adafruit/4960?qs=pBJMDPsKWf1Q%252BqeEoLnQjA%3D%3D"
+				(at 24.13 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Adafruit"
+				(at 24.13 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "4960"
+				(at 24.13 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "4960_1_1"
+				(rectangle
+					(start -8.89 3.81)
+					(end 8.89 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -13.97 1.27 0)
+					(length 5.08)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 -1.27 0)
+					(length 5.08)
+					(name "DOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 1.27 180)
+					(length 5.08)
+					(name "DIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 13.97 -1.27 180)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
-		(at 133.35 91.44)
+		(at 236.22 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1e445b09-e984-4f77-9afc-6f5aa3687454")
+		(uuid "19ba5dda-853a-4069-b73d-cb18e2d50a23")
+	)
+	(junction
+		(at 140.97 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1fa2be5f-d156-4340-9f47-19ae6f7e74e4")
 	)
 	(junction
 		(at 81.28 49.53)
@@ -596,10 +535,10 @@
 		(uuid "2220e14e-0bbe-4c84-adae-47dfbd9913b7")
 	)
 	(junction
-		(at 185.42 86.36)
+		(at 179.07 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "282832ff-d987-4696-8e98-1b66be39ec30")
+		(uuid "2609fcdf-44e2-40c6-b06d-95b5e6a98d28")
 	)
 	(junction
 		(at 64.77 132.08)
@@ -608,34 +547,10 @@
 		(uuid "2c1ca18c-cb18-4e49-a618-1dc2041b9ff9")
 	)
 	(junction
-		(at 185.42 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2fbd8b6c-ff26-44ce-9887-076527aabebb")
-	)
-	(junction
 		(at 81.28 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3c9ca1ae-f8f2-4421-9ce4-3f770a5243de")
-	)
-	(junction
-		(at 185.42 50.8)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3e66ddbd-079c-4c53-9339-944612183428")
-	)
-	(junction
-		(at 160.02 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e088d7f-7da7-4cc0-990e-cebf3fe0bb36")
-	)
-	(junction
-		(at 185.42 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "626d2216-8230-4099-8aba-5845d4f2eb12")
 	)
 	(junction
 		(at 52.07 93.98)
@@ -650,10 +565,16 @@
 		(uuid "672416b2-04cf-44ae-a8da-0d1593a2363e")
 	)
 	(junction
-		(at 133.35 73.66)
+		(at 196.85 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "75310bf6-b7e2-4ea7-877e-8d8a81d644aa")
+		(uuid "7b5bd133-6728-45ff-a9fa-ccdd70be5d63")
+	)
+	(junction
+		(at 236.22 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8036aa4f-c92c-46e3-9ae0-1200ff265c44")
 	)
 	(junction
 		(at 52.07 72.39)
@@ -662,22 +583,28 @@
 		(uuid "82c87202-d36b-4861-afc4-720db116955e")
 	)
 	(junction
-		(at 160.02 88.9)
+		(at 236.22 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9ac15a6a-2e3f-4e01-b662-a513163c7647")
+		(uuid "978af120-a875-406b-a4d9-d20165ba9bd2")
 	)
 	(junction
-		(at 160.02 53.34)
+		(at 140.97 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a3d0e908-5b18-451a-a0ce-f86dec47a079")
+		(uuid "a1d6f71f-540a-472a-95ce-3f27819fd456")
 	)
 	(junction
-		(at 133.35 109.22)
+		(at 179.07 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "dfb6d9dd-ee72-4642-833a-19de2260a6fa")
+		(uuid "c63b3fcd-15e1-406d-9f7c-7420c210b4dd")
+	)
+	(junction
+		(at 140.97 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc02c7ee-6d37-435b-a1a2-524f3c96647e")
 	)
 	(junction
 		(at 64.77 87.63)
@@ -692,10 +619,22 @@
 		(uuid "e9573f4d-e7ca-44ab-94ef-0d7824a392dd")
 	)
 	(junction
+		(at 179.07 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea46f76e-a5fe-4328-95d3-16cd445aa1a7")
+	)
+	(junction
 		(at 64.77 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eb05e785-8e1b-4243-bc9c-6ecae96df94a")
+	)
+	(junction
+		(at 196.85 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eec49f50-579f-46dd-a9a0-76749528daeb")
 	)
 	(junction
 		(at 64.77 109.22)
@@ -704,40 +643,10 @@
 		(uuid "f4d76742-656a-406f-95fd-ff6983a7e569")
 	)
 	(junction
-		(at 160.02 71.12)
+		(at 196.85 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f68b9e4b-3545-4c37-8ae5-49c057e4cdde")
-	)
-	(wire
-		(pts
-			(xy 185.42 43.18) (xy 185.42 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02c1f570-51bb-4a45-ab02-38362f273b9f")
-	)
-	(wire
-		(pts
-			(xy 135.89 88.9) (xy 133.35 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "032c0389-59c4-461c-82ca-c6c4ac148fae")
-	)
-	(wire
-		(pts
-			(xy 133.35 91.44) (xy 133.35 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05a70010-98b6-4c7c-88cf-55db7f230c07")
+		(uuid "f9a60f2e-9f3c-4474-8f59-880ef7034652")
 	)
 	(wire
 		(pts
@@ -751,33 +660,13 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 114.3) (xy 176.53 123.19)
+			(xy 203.2 73.66) (xy 203.2 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b5d79d2-b6c2-42a2-ac1e-ba62ee25bca4")
-	)
-	(wire
-		(pts
-			(xy 151.13 88.9) (xy 160.02 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d20eadd-b974-4c20-b3e4-86d0be36677c")
-	)
-	(wire
-		(pts
-			(xy 151.13 106.68) (xy 160.02 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "109e6176-84f4-4dd4-af19-df24a4596c57")
+		(uuid "0d6eb98e-ac00-44b4-9395-322ed7d7aea3")
 	)
 	(wire
 		(pts
@@ -791,6 +680,26 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 99.06) (xy 172.72 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11c2339f-e157-4a73-9b61-3f4df8c85824")
+	)
+	(wire
+		(pts
+			(xy 236.22 90.17) (xy 236.22 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "131fe1e4-4770-48f8-816d-58b374a9828b")
+	)
+	(wire
+		(pts
 			(xy 67.31 62.23) (xy 64.77 64.77)
 		)
 		(stroke
@@ -798,6 +707,16 @@
 			(type default)
 		)
 		(uuid "136ad2f3-b74f-4ff0-b5d7-e5d4112e8d96")
+	)
+	(wire
+		(pts
+			(xy 231.14 90.17) (xy 236.22 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "146e41e3-fde0-4213-adcc-9717cf2b0fda")
 	)
 	(wire
 		(pts
@@ -811,43 +730,43 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 60.96) (xy 143.51 63.5)
+			(xy 201.93 43.18) (xy 201.93 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1d870cb5-35b6-46a1-ae0a-d9fe4263f8c4")
+		(uuid "1b7c572d-1cfd-45d5-8c9f-48d1ee7ad584")
 	)
 	(wire
 		(pts
-			(xy 143.51 114.3) (xy 146.05 116.84)
+			(xy 172.72 95.25) (xy 179.07 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2681070f-e254-4653-a7bc-2602f3724902")
+		(uuid "20cbfeac-b04e-4cd1-91d7-412e022fc5f3")
 	)
 	(wire
 		(pts
-			(xy 143.51 78.74) (xy 143.51 81.28)
+			(xy 140.97 109.22) (xy 144.78 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "29e60c56-5212-418e-96a8-62df590aa80d")
+		(uuid "222968d6-4046-41d7-8e8f-4d1d5067b982")
 	)
 	(wire
 		(pts
-			(xy 175.26 60.96) (xy 175.26 63.5)
+			(xy 172.72 66.04) (xy 172.72 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b37f6a1-c044-48ee-9290-32a026244332")
+		(uuid "29feb624-07a8-4b66-a821-0c84a7f05d1c")
 	)
 	(wire
 		(pts
@@ -881,43 +800,23 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 104.14) (xy 185.42 114.3)
+			(xy 144.78 111.76) (xy 144.78 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "310870d0-210a-43fc-b7c4-f2c08dd4d95b")
+		(uuid "2d802076-6faf-4789-b2b9-f6b413ddcd68")
 	)
 	(wire
 		(pts
-			(xy 175.26 78.74) (xy 175.26 81.28)
+			(xy 179.07 43.18) (xy 179.07 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33f23a2e-4ff5-4ddb-998f-12d20d3a92d2")
-	)
-	(wire
-		(pts
-			(xy 176.53 123.19) (xy 142.24 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "345087b2-a21c-4e2b-b74c-9a37612399a7")
-	)
-	(wire
-		(pts
-			(xy 133.35 109.22) (xy 133.35 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36d83369-1cf0-4c80-aab9-593d8aa406cc")
+		(uuid "330a9e17-c7d0-4917-a4b1-84a89785efe0")
 	)
 	(wire
 		(pts
@@ -941,6 +840,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 99.06) (xy 172.72 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38e7d438-99eb-47bf-b6a4-e9d9e8d3e75a")
+	)
+	(wire
+		(pts
 			(xy 93.98 87.63) (xy 96.52 85.09)
 		)
 		(stroke
@@ -948,6 +857,16 @@
 			(type default)
 		)
 		(uuid "393c29b4-eef7-48dc-b8e5-db2c1c885c92")
+	)
+	(wire
+		(pts
+			(xy 172.72 59.69) (xy 173.99 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a916404-7cd0-4175-80bf-cc83ceb0c395")
 	)
 	(wire
 		(pts
@@ -961,16 +880,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 106.68) (xy 185.42 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c89cf98-68fa-47fc-a122-df1ff18b9ad0")
-	)
-	(wire
-		(pts
 			(xy 64.77 119.38) (xy 67.31 121.92)
 		)
 		(stroke
@@ -978,16 +887,6 @@
 			(type default)
 		)
 		(uuid "3dded832-3dff-4f39-8440-3a5105d0515b")
-	)
-	(wire
-		(pts
-			(xy 160.02 88.9) (xy 167.64 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3e47a8ee-9492-40f6-a54e-4ebd390f5bf4")
 	)
 	(wire
 		(pts
@@ -1001,6 +900,26 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 102.87) (xy 231.14 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40b503e6-344c-4647-90d5-9f3a1543bad2")
+	)
+	(wire
+		(pts
+			(xy 140.97 92.71) (xy 140.97 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41f88465-cc08-4e95-adcf-9d6efce94d1e")
+	)
+	(wire
+		(pts
 			(xy 81.28 39.37) (xy 81.28 49.53)
 		)
 		(stroke
@@ -1008,6 +927,16 @@
 			(type default)
 		)
 		(uuid "43ffa658-a796-4f7c-9e23-1de44fa8a5d8")
+	)
+	(wire
+		(pts
+			(xy 196.85 41.91) (xy 196.85 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46215ec0-d807-48e2-b528-eaa8e54c14d3")
 	)
 	(wire
 		(pts
@@ -1021,6 +950,36 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 109.22) (xy 234.95 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "467fadcd-cd61-48f4-9237-e63446cb0aee")
+	)
+	(wire
+		(pts
+			(xy 140.97 76.2) (xy 140.97 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48d9968b-bff1-4b9e-b7d6-8ab86df7560e")
+	)
+	(wire
+		(pts
+			(xy 179.07 95.25) (xy 179.07 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49f84249-3548-4ae3-9417-0cc1cf3dd881")
+	)
+	(wire
+		(pts
 			(xy 54.61 74.93) (xy 52.07 72.39)
 		)
 		(stroke
@@ -1028,6 +987,16 @@
 			(type default)
 		)
 		(uuid "4a09a802-21e5-41c6-a942-006ace470abd")
+	)
+	(wire
+		(pts
+			(xy 144.78 82.55) (xy 172.72 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a10cde7-a98f-49c7-a461-90133a59aefa")
 	)
 	(wire
 		(pts
@@ -1071,13 +1040,33 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 106.68) (xy 133.35 109.22)
+			(xy 203.2 86.36) (xy 231.14 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "65301983-7eef-4766-809b-1cef2450f1fb")
+		(uuid "5fa89f61-2578-4770-8978-6283f2dda26e")
+	)
+	(wire
+		(pts
+			(xy 196.85 92.71) (xy 196.85 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63da845a-1e7c-4843-9269-b1f386f3ed14")
+	)
+	(wire
+		(pts
+			(xy 196.85 59.69) (xy 196.85 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64b75989-f138-4584-810c-84aeb08b312d")
 	)
 	(wire
 		(pts
@@ -1088,6 +1077,36 @@
 			(type default)
 		)
 		(uuid "66426191-21fb-4d47-92be-c6bb18642d70")
+	)
+	(wire
+		(pts
+			(xy 231.14 106.68) (xy 236.22 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69549bc7-8f87-46c9-8a07-5e0493555883")
+	)
+	(wire
+		(pts
+			(xy 231.14 102.87) (xy 231.14 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69a863e0-6a0c-462a-bf7b-719c21f2e489")
+	)
+	(wire
+		(pts
+			(xy 172.72 78.74) (xy 179.07 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e21e774-e209-4620-af32-f7ab26fdfd56")
 	)
 	(wire
 		(pts
@@ -1111,43 +1130,13 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 71.12) (xy 160.02 71.12)
+			(xy 144.78 62.23) (xy 144.78 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7a3f66f6-61f2-4ef6-b9ba-b9c2bfbd48c1")
-	)
-	(wire
-		(pts
-			(xy 185.42 68.58) (xy 185.42 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7bccbd7a-7fa2-4d3d-a324-9089a8ac1d73")
-	)
-	(wire
-		(pts
-			(xy 135.89 53.34) (xy 133.35 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "83c70e88-2245-4fdb-b631-fb0bb77aa2a2")
-	)
-	(wire
-		(pts
-			(xy 135.89 71.12) (xy 133.35 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "89a2c837-5e94-43bc-837e-1d0a55f7d5e1")
+		(uuid "8987241a-c168-4d5f-a24c-d50fa50aaf63")
 	)
 	(wire
 		(pts
@@ -1161,53 +1150,43 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 43.18) (xy 160.02 53.34)
+			(xy 231.14 69.85) (xy 231.14 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8d5c0083-4df0-4b9d-abc6-a726728cbcf4")
+		(uuid "8dc42d9d-00b4-4b1c-97d2-cb57ddf7ac56")
 	)
 	(wire
 		(pts
-			(xy 175.26 96.52) (xy 175.26 99.06)
+			(xy 231.14 73.66) (xy 236.22 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9071f1f6-bf80-409e-b638-3080130f88bb")
+		(uuid "91063b2d-3dbc-4bfc-ae9a-31b21f6ce855")
 	)
 	(wire
 		(pts
-			(xy 182.88 71.12) (xy 185.42 68.58)
+			(xy 179.07 111.76) (xy 172.72 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "91f4986f-68d9-4903-9851-762511a5dc28")
+		(uuid "92e0db6e-bb01-4e95-bf34-656021c56d03")
 	)
 	(wire
 		(pts
-			(xy 160.02 53.34) (xy 160.02 71.12)
+			(xy 196.85 92.71) (xy 203.2 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "96151421-9256-4373-b002-e5dba65d9cc7")
-	)
-	(wire
-		(pts
-			(xy 172.72 116.84) (xy 175.26 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9782407c-7d54-429e-8fd4-13f39a69362b")
+		(uuid "952d4536-6d66-4a41-899d-580cd1023cd7")
 	)
 	(wire
 		(pts
@@ -1221,23 +1200,43 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 53.34) (xy 167.64 53.34)
+			(xy 179.07 62.23) (xy 179.07 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9df4b744-797e-459d-94eb-4c3f4704bd08")
+		(uuid "9b6af2f1-322f-409b-b149-6e8bf64c16a8")
 	)
 	(wire
 		(pts
-			(xy 160.02 71.12) (xy 160.02 88.9)
+			(xy 144.78 66.04) (xy 172.72 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a108c6bf-e33e-49b4-9972-62940baed53d")
+		(uuid "9fb57d52-3482-41fc-8740-14d7a3b11b22")
+	)
+	(wire
+		(pts
+			(xy 203.2 106.68) (xy 203.2 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a22eb025-872e-4757-9d9b-21656dff7916")
+	)
+	(wire
+		(pts
+			(xy 144.78 78.74) (xy 144.78 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2f4f382-8ec5-483c-8869-42d012a9dbfa")
 	)
 	(wire
 		(pts
@@ -1258,6 +1257,16 @@
 			(type default)
 		)
 		(uuid "a767b579-e429-4ece-9834-2d9f173aa298")
+	)
+	(wire
+		(pts
+			(xy 140.97 59.69) (xy 140.97 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a914494f-55a3-4229-abd4-4baf4a77ddac")
 	)
 	(wire
 		(pts
@@ -1291,6 +1300,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 95.25) (xy 144.78 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ade14ad1-40fe-4e94-bbef-9018b9279ae4")
+	)
+	(wire
+		(pts
 			(xy 67.31 129.54) (xy 64.77 132.08)
 		)
 		(stroke
@@ -1298,16 +1317,6 @@
 			(type default)
 		)
 		(uuid "af295b0e-71e9-478c-ac26-75a3d5de6f45")
-	)
-	(wire
-		(pts
-			(xy 182.88 53.34) (xy 185.42 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b06c7aae-2002-4d3a-bc96-278cdb74db23")
 	)
 	(wire
 		(pts
@@ -1321,13 +1330,33 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 55.88) (xy 133.35 73.66)
+			(xy 172.72 62.23) (xy 179.07 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b370b2da-a296-4b7f-9c05-2f5276a05514")
+		(uuid "b2c38301-3ec3-46d6-864e-4d39e6fcf22e")
+	)
+	(wire
+		(pts
+			(xy 140.97 92.71) (xy 144.78 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3a72249-51e4-4c10-a071-6b312119891d")
+	)
+	(wire
+		(pts
+			(xy 236.22 57.15) (xy 236.22 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4ad50f1-fdca-43c2-8f8b-634b4796dd58")
 	)
 	(wire
 		(pts
@@ -1341,23 +1370,53 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 88.9) (xy 185.42 86.36)
+			(xy 196.85 109.22) (xy 203.2 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be1703c1-4b29-400d-b358-c2c10f176b03")
+		(uuid "b8828c70-b0c2-4809-821b-d63d325a5c11")
 	)
 	(wire
 		(pts
-			(xy 160.02 106.68) (xy 167.64 106.68)
+			(xy 196.85 59.69) (xy 203.2 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bfe6abd7-24c1-4122-be7d-9b09a7f6a457")
+		(uuid "b8f95aef-6ee2-48ed-b660-44f2f3fbe93e")
+	)
+	(wire
+		(pts
+			(xy 231.14 109.22) (xy 234.95 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be97f7e1-b21c-43ea-9f08-a924d5d3ea5e")
+	)
+	(wire
+		(pts
+			(xy 140.97 76.2) (xy 144.78 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0e66da9-452b-488c-939e-f25474174def")
+	)
+	(wire
+		(pts
+			(xy 203.2 57.15) (xy 201.93 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2e54dae-6e67-4ad3-8f75-fe89d87d3f84")
 	)
 	(wire
 		(pts
@@ -1371,23 +1430,33 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 73.66) (xy 133.35 91.44)
+			(xy 203.2 90.17) (xy 203.2 86.36)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cbeabb90-5670-45ee-bef4-565f86cb6424")
+		(uuid "c667ff2a-dcfa-407f-b769-3431386d0b60")
 	)
 	(wire
 		(pts
-			(xy 143.51 96.52) (xy 143.51 99.06)
+			(xy 231.14 86.36) (xy 231.14 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ce46b33e-024d-4b5a-a6b6-7d0047954bc6")
+		(uuid "cb9885af-f5fb-4f96-939b-0ed9548d72ad")
+	)
+	(wire
+		(pts
+			(xy 196.85 76.2) (xy 203.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdc02658-065a-4394-bd4c-1e0f9c449ea8")
 	)
 	(wire
 		(pts
@@ -1401,73 +1470,33 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 41.91) (xy 143.51 45.72)
+			(xy 236.22 43.18) (xy 236.22 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0a4d4a9-0614-4bfb-b92e-21d01d91f785")
+		(uuid "d407453f-7aec-49a9-8a7a-0a43a0e097e1")
 	)
 	(wire
 		(pts
-			(xy 160.02 88.9) (xy 160.02 106.68)
+			(xy 203.2 69.85) (xy 231.14 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0cb7d53-6698-49be-b932-37e3a19074db")
+		(uuid "de64a126-a352-4233-a3bf-54e6f3167c06")
 	)
 	(wire
 		(pts
-			(xy 160.02 71.12) (xy 167.64 71.12)
+			(xy 172.72 82.55) (xy 172.72 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d535e9ad-d7a4-45b0-9ae9-0b216c57db6c")
-	)
-	(wire
-		(pts
-			(xy 142.24 123.19) (xy 133.35 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7eeced5-e3b4-406c-85be-4c79635be63a")
-	)
-	(wire
-		(pts
-			(xy 185.42 50.8) (xy 185.42 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9f01250-8f7a-4c9f-b386-b458b58e7056")
-	)
-	(wire
-		(pts
-			(xy 175.26 43.18) (xy 175.26 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e38c4815-5091-484f-bf4d-4178e64323f2")
-	)
-	(wire
-		(pts
-			(xy 185.42 86.36) (xy 185.42 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7d42d78-35b1-4fff-968a-b99c7f588faa")
+		(uuid "e4c1c96a-b193-411e-96e9-023ea3244f14")
 	)
 	(wire
 		(pts
@@ -1481,16 +1510,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 53.34) (xy 160.02 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e8e247ff-c8b1-4f94-9c6e-d5ba953f8061")
-	)
-	(wire
-		(pts
 			(xy 64.77 64.77) (xy 93.98 64.77)
 		)
 		(stroke
@@ -1498,6 +1517,46 @@
 			(type default)
 		)
 		(uuid "eb0ea59b-c313-48a1-b202-1b65e071bfb7")
+	)
+	(wire
+		(pts
+			(xy 231.14 57.15) (xy 236.22 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed7048c3-dfd4-452c-a12e-ba8d5359dce3")
+	)
+	(wire
+		(pts
+			(xy 140.97 59.69) (xy 144.78 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed8b4a79-1713-4962-9e51-7dd5669c3f63")
+	)
+	(wire
+		(pts
+			(xy 140.97 43.18) (xy 140.97 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee50af7a-0203-4bb0-84d6-837a0e5a71c4")
+	)
+	(wire
+		(pts
+			(xy 196.85 76.2) (xy 196.85 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5d517b0-ee36-4070-9a38-3ac419400728")
 	)
 	(wire
 		(pts
@@ -1511,6 +1570,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 119.38) (xy 234.95 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f72ffd2a-b9ab-4f9b-ba02-da9120ca2df8")
+	)
+	(wire
+		(pts
 			(xy 52.07 39.37) (xy 52.07 49.53)
 		)
 		(stroke
@@ -1518,6 +1587,26 @@
 			(type default)
 		)
 		(uuid "fac2f151-481b-4d3f-886d-1aed0b3618af")
+	)
+	(wire
+		(pts
+			(xy 236.22 73.66) (xy 236.22 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faead2c1-9a78-4a32-96f0-d7c70403b4c4")
+	)
+	(wire
+		(pts
+			(xy 179.07 78.74) (xy 179.07 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faf21a37-7154-493d-a280-818796f3c1d2")
 	)
 	(wire
 		(pts
@@ -1531,17 +1620,61 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 116.84) (xy 172.72 116.84)
+			(xy 173.99 43.18) (xy 173.99 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fe73a9b3-b8c6-4bc9-a5db-7e98e2a35534")
+		(uuid "fd5a3bb2-78c7-4fca-aa9e-b6558f49afe5")
+	)
+	(global_label "GND"
+		(shape input)
+		(at 179.07 43.18 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0294892a-d328-4b3a-bf39-fe588c7b9ef6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 179.07 36.3243 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "+3.3V"
 		(shape input)
-		(at 160.02 43.18 90)
+		(at 196.85 41.91 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "66fa3516-14e3-49d2-b685-e025585dfd41")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 196.85 33.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "+3.3V"
+		(shape input)
+		(at 140.97 43.18 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1551,7 +1684,7 @@
 		)
 		(uuid "7e1592ed-6966-4fa8-9a15-65f1d92530f6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 160.02 34.51 90)
+			(at 140.97 34.51 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1563,7 +1696,7 @@
 	)
 	(global_label "GND"
 		(shape input)
-		(at 185.42 43.18 90)
+		(at 236.22 43.18 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1573,7 +1706,7 @@
 		)
 		(uuid "eefd7e6a-0fe8-464a-af10-6df203814be3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.42 36.3243 90)
+			(at 236.22 36.3243 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1585,7 +1718,7 @@
 	)
 	(hierarchical_label "NEO_IN"
 		(shape input)
-		(at 143.51 41.91 90)
+		(at 173.99 43.18 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1607,7 +1740,7 @@
 	)
 	(hierarchical_label "NEO_OUT"
 		(shape input)
-		(at 175.26 43.18 90)
+		(at 201.93 43.18 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1760,6 +1893,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Transmitter Symbol Library:4960")
+		(at 158.75 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c70f1fb-1425-4259-8211-dc0d1a172493")
+		(property "Reference" "IC4"
+			(at 172.72 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4960"
+			(at 172.72 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Transmitter Library:4960_ADA"
+			(at 182.88 205.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 182.88 305.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Adafruit Accessories NeoPixel Reverse Mount RGB LEDs - 10 Pack of SK6812-E"
+			(at 158.75 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.88"
+			(at 182.88 505.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4960"
+			(at 182.88 605.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Adafruit/4960?qs=pBJMDPsKWf1Q%252BqeEoLnQjA%3D%3D"
+			(at 182.88 705.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Adafruit"
+			(at 182.88 805.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4960"
+			(at 182.88 905.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "09eafd9e-2a67-4fe6-9948-d4e072bb38f7")
+		)
+		(pin "4"
+			(uuid "cd20f693-514b-4f80-ba6a-964770c84d32")
+		)
+		(pin "3"
+			(uuid "66c072c5-f4d9-4c65-97da-9a4ffdeb1762")
+		)
+		(pin "2"
+			(uuid "4271e259-d617-4ca7-bd27-66bde86e69a7")
+		)
+		(instances
+			(project "Transmitter Main Board"
+				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
+					(reference "IC4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:1N4148")
 		(at 96.52 102.87 90)
 		(unit 1)
@@ -1848,6 +2107,258 @@
 		)
 	)
 	(symbol
+		(lib_id "Transmitter Symbol Library:4960")
+		(at 158.75 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33d2b9c9-0c50-471b-8086-f015161161f7")
+		(property "Reference" "IC2"
+			(at 172.72 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4960"
+			(at 172.72 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Transmitter Library:4960_ADA"
+			(at 182.88 172.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 182.88 272.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Adafruit Accessories NeoPixel Reverse Mount RGB LEDs - 10 Pack of SK6812-E"
+			(at 158.75 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.88"
+			(at 182.88 472.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4960"
+			(at 182.88 572.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Adafruit/4960?qs=pBJMDPsKWf1Q%252BqeEoLnQjA%3D%3D"
+			(at 182.88 672.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Adafruit"
+			(at 182.88 772.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4960"
+			(at 182.88 872.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4ad91f6e-6c45-47c9-b905-874675a5146f")
+		)
+		(pin "4"
+			(uuid "f3155b5f-15eb-4f77-a6d6-81b9cd0c08fa")
+		)
+		(pin "3"
+			(uuid "67ba7411-f4a0-4e87-bd8f-73d5b845f423")
+		)
+		(pin "2"
+			(uuid "7034f0b2-a7e7-4ee1-8460-eaadb4fcab65")
+		)
+		(instances
+			(project "Transmitter Main Board"
+				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
+					(reference "IC2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transmitter Symbol Library:4960")
+		(at 217.17 107.95 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "349fee49-8a69-472a-a22d-fcd287375827")
+		(property "Reference" "IC5"
+			(at 231.14 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4960"
+			(at 231.14 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Transmitter Library:4960_ADA"
+			(at 241.3 13.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 241.3 -86.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Adafruit Accessories NeoPixel Reverse Mount RGB LEDs - 10 Pack of SK6812-E"
+			(at 217.17 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.88"
+			(at 241.3 -286.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4960"
+			(at 241.3 -386.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Adafruit/4960?qs=pBJMDPsKWf1Q%252BqeEoLnQjA%3D%3D"
+			(at 241.3 -486.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Adafruit"
+			(at 241.3 -586.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4960"
+			(at 241.3 -686.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f5578d9-75b3-4a10-b842-90ca1ef62e46")
+		)
+		(pin "4"
+			(uuid "213642e1-1560-4355-8618-bd946ef54e53")
+		)
+		(pin "3"
+			(uuid "a727b4bc-6224-4815-9f2c-8a771521276b")
+		)
+		(pin "2"
+			(uuid "5922fe9e-26e5-44f3-a858-066f3e7b47eb")
+		)
+		(instances
+			(project "Transmitter Main Board"
+				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
+					(reference "IC5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 88.9 119.38 0)
 		(unit 1)
@@ -1909,81 +2420,6 @@
 			(project "Transmitter Main Board"
 				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
 					(reference "SW8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:SK6812")
-		(at 175.26 88.9 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "461938f9-b9a2-438a-b400-9d89faae0b5e")
-		(property "Reference" "D15"
-			(at 165.1 95.3202 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812"
-			(at 165.1 92.7802 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 182.88 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 184.785 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 175.26 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8d4c9953-31ee-44ba-9185-cf12d7572080")
-		)
-		(pin "2"
-			(uuid "d4b2b207-76c1-4e01-8535-9fa8cbc53988")
-		)
-		(pin "4"
-			(uuid "a194a887-4768-4eb2-8c7f-12040371336a")
-		)
-		(pin "3"
-			(uuid "2d78cc27-5a31-440a-b53f-3ec4070785af")
-		)
-		(instances
-			(project "Transmitter Main Board"
-				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
-					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -2057,6 +2493,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Transmitter Symbol Library:4960")
+		(at 217.17 74.93 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "47e8b40a-e9fe-48a4-967a-ddc34dff33ae")
+		(property "Reference" "IC7"
+			(at 231.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4960"
+			(at 231.14 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Transmitter Library:4960_ADA"
+			(at 241.3 -19.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 241.3 -119.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Adafruit Accessories NeoPixel Reverse Mount RGB LEDs - 10 Pack of SK6812-E"
+			(at 217.17 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.88"
+			(at 241.3 -319.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4960"
+			(at 241.3 -419.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Adafruit/4960?qs=pBJMDPsKWf1Q%252BqeEoLnQjA%3D%3D"
+			(at 241.3 -519.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Adafruit"
+			(at 241.3 -619.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4960"
+			(at 241.3 -719.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f825b792-c52f-4c8f-b265-18a9fbf59281")
+		)
+		(pin "4"
+			(uuid "1bf6b51f-7e20-4c05-b70c-f4ecaa924300")
+		)
+		(pin "3"
+			(uuid "e454a7e9-b9f4-40fa-859a-b740cb10ae17")
+		)
+		(pin "2"
+			(uuid "61836c30-db92-43e6-8eff-5a513814bd90")
+		)
+		(instances
+			(project "Transmitter Main Board"
+				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
+					(reference "IC7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 88.9 96.52 0)
 		(unit 1)
@@ -2124,32 +2686,33 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812")
-		(at 175.26 53.34 90)
+		(lib_id "Transmitter Symbol Library:4960")
+		(at 217.17 58.42 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5290e318-9e8e-4e47-b069-968f1b24f5d9")
-		(property "Reference" "D13"
-			(at 165.1 59.7602 90)
+		(uuid "829cb28d-292c-4135-820f-8f720ab9b472")
+		(property "Reference" "IC8"
+			(at 231.14 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812"
-			(at 165.1 57.2202 90)
+		(property "Value" "4960"
+			(at 231.14 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 182.88 52.07 0)
+		(property "Footprint" "Transmitter Library:4960_ADA"
+			(at 241.3 -36.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2158,8 +2721,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 184.785 50.8 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 241.3 -136.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2168,182 +2731,81 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 175.26 53.34 0)
+		(property "Description" "Adafruit Accessories NeoPixel Reverse Mount RGB LEDs - 10 Pack of SK6812-E"
+			(at 217.17 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.88"
+			(at 241.3 -336.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4960"
+			(at 241.3 -436.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Adafruit/4960?qs=pBJMDPsKWf1Q%252BqeEoLnQjA%3D%3D"
+			(at 241.3 -536.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Adafruit"
+			(at 241.3 -636.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4960"
+			(at 241.3 -736.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "73b79724-686d-4f40-b507-b43fb3e89fe6")
-		)
-		(pin "2"
-			(uuid "38bad88d-f48e-4cc6-b5db-ef8a6620d508")
+			(uuid "6b765705-1e88-4941-8df8-d1c220e380de")
 		)
 		(pin "4"
-			(uuid "4bf6ecb1-d710-42d2-a98e-b81f824d0162")
+			(uuid "450a4b0e-016b-44b9-b558-6ee204e281a6")
 		)
 		(pin "3"
-			(uuid "0c5cfa06-1b3b-44bb-8521-1ef724671675")
+			(uuid "9f7cadca-f26f-4120-888a-c6aeaba9101b")
+		)
+		(pin "2"
+			(uuid "7bd23cad-8e50-4d8f-87cb-88722a8f5992")
 		)
 		(instances
 			(project "Transmitter Main Board"
 				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
-					(reference "D13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:SK6812")
-		(at 143.51 88.9 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6ae2540b-b421-47c4-ac6c-966667a5144c")
-		(property "Reference" "D11"
-			(at 153.67 82.4798 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812"
-			(at 153.67 85.0198 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 135.89 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 133.985 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 143.51 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2dcd2004-19bd-4bc8-b779-992282039fcd")
-		)
-		(pin "2"
-			(uuid "64b5aa92-463a-4b13-8d7d-1c99d132eb27")
-		)
-		(pin "4"
-			(uuid "4761f14b-5f5a-4079-9fd8-7c88b9dd9a37")
-		)
-		(pin "3"
-			(uuid "574e1b9a-b5eb-4539-ae37-bb0cebb54335")
-		)
-		(instances
-			(project "Transmitter Main Board"
-				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
-					(reference "D11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:SK6812")
-		(at 175.26 106.68 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6b6d769a-208e-4c03-ac97-8bec01d4a670")
-		(property "Reference" "D16"
-			(at 165.1 113.1002 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812"
-			(at 165.1 110.5602 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 182.88 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 184.785 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 175.26 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fc4eb26b-4723-48b1-8cf3-f60fc3dbed52")
-		)
-		(pin "2"
-			(uuid "a31a15aa-a4ce-4217-95b3-cb78eddf3efb")
-		)
-		(pin "4"
-			(uuid "13f2cd94-8813-48b6-847e-1ccd4858e270")
-		)
-		(pin "3"
-			(uuid "8b384a27-cf05-4987-8ff3-942b044a2d79")
-		)
-		(instances
-			(project "Transmitter Main Board"
-				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
-					(reference "D16")
+					(reference "IC8")
 					(unit 1)
 				)
 			)
@@ -2417,33 +2879,33 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812")
-		(at 143.51 53.34 270)
+		(lib_id "Transmitter Symbol Library:4960")
+		(at 158.75 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "85b890c0-6ad4-4e5b-a99d-11af1e4502a7")
-		(property "Reference" "D9"
-			(at 153.67 46.9198 90)
+		(uuid "8b981115-b2ab-412a-912a-4c9db28b8c32")
+		(property "Reference" "IC3"
+			(at 172.72 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812"
-			(at 153.67 49.4598 90)
+		(property "Value" "4960"
+			(at 172.72 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 135.89 54.61 0)
+		(property "Footprint" "Transmitter Library:4960_ADA"
+			(at 182.88 188.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2452,8 +2914,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 133.985 55.88 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 182.88 288.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2462,31 +2924,81 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 143.51 53.34 0)
+		(property "Description" "Adafruit Accessories NeoPixel Reverse Mount RGB LEDs - 10 Pack of SK6812-E"
+			(at 158.75 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.88"
+			(at 182.88 488.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4960"
+			(at 182.88 588.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Adafruit/4960?qs=pBJMDPsKWf1Q%252BqeEoLnQjA%3D%3D"
+			(at 182.88 688.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Adafruit"
+			(at 182.88 788.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4960"
+			(at 182.88 888.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "c811fabf-703c-4509-b495-9b1c45635641")
-		)
-		(pin "2"
-			(uuid "cb88edc6-840c-4717-a806-2b4a67b63420")
+			(uuid "39354e1f-5538-4a24-803a-c308c824cada")
 		)
 		(pin "4"
-			(uuid "7c548a6d-8aca-46fb-8c53-3bbe083483f7")
+			(uuid "2f20b68b-f35b-4e63-89db-0453d3432f32")
 		)
 		(pin "3"
-			(uuid "347ea81a-8ede-428b-9870-b0a0f2088cd2")
+			(uuid "43c420c5-f20d-4b4d-8816-87bf5ec6ec02")
+		)
+		(pin "2"
+			(uuid "1e55aab5-76f7-4fb2-9277-8b10469b6133")
 		)
 		(instances
 			(project "Transmitter Main Board"
 				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
-					(reference "D9")
+					(reference "IC3")
 					(unit 1)
 				)
 			)
@@ -2669,6 +3181,132 @@
 		)
 	)
 	(symbol
+		(lib_id "Transmitter Symbol Library:4960")
+		(at 158.75 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa0d9e3c-8003-466f-83c9-0d7654db6e8b")
+		(property "Reference" "IC1"
+			(at 172.72 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "4960"
+			(at 172.72 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Transmitter Library:4960_ADA"
+			(at 182.88 155.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 182.88 255.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Adafruit Accessories NeoPixel Reverse Mount RGB LEDs - 10 Pack of SK6812-E"
+			(at 158.75 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.88"
+			(at 182.88 455.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4960"
+			(at 182.88 555.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Adafruit/4960?qs=pBJMDPsKWf1Q%252BqeEoLnQjA%3D%3D"
+			(at 182.88 655.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Adafruit"
+			(at 182.88 755.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4960"
+			(at 182.88 855.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7839f7e1-6208-4d00-a6ef-cc32971ef566")
+		)
+		(pin "4"
+			(uuid "540860e5-022e-4996-aa96-dbb55f6c4f47")
+		)
+		(pin "3"
+			(uuid "1a98f53c-bb37-448a-a840-c3c63dfbdec7")
+		)
+		(pin "2"
+			(uuid "16a78d9f-8821-4aa6-be2a-75610300e334")
+		)
+		(instances
+			(project ""
+				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
+					(reference "IC1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 88.9 74.93 0)
 		(unit 1)
@@ -2730,82 +3368,6 @@
 			(project "Transmitter Main Board"
 				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
 					(reference "SW6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:SK6812")
-		(at 143.51 71.12 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d33f300e-1a02-40b9-ae27-e35c42ed9e8d")
-		(property "Reference" "D10"
-			(at 153.67 64.6998 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812"
-			(at 153.67 67.2398 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 135.89 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 133.985 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 143.51 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ac68a508-78a1-462d-942a-c898d3c6ee04")
-		)
-		(pin "2"
-			(uuid "94521dd4-ff69-416c-9f32-a02e61eaba8d")
-		)
-		(pin "4"
-			(uuid "94e206f9-8711-4121-94c7-551566f6339e")
-		)
-		(pin "3"
-			(uuid "92854408-0c99-48cf-8b67-5399783cd095")
-		)
-		(instances
-			(project "Transmitter Main Board"
-				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
-					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -3055,82 +3617,6 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812")
-		(at 143.51 106.68 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d5d9f9d5-ea92-4567-ac41-604bd9c4280c")
-		(property "Reference" "D12"
-			(at 153.67 100.2598 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812"
-			(at 153.67 102.7998 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 135.89 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 133.985 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 143.51 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6ad92bc8-619c-474a-aeb5-00bd55ce8320")
-		)
-		(pin "2"
-			(uuid "0cdaeda0-0b5b-4af2-982f-a38a477bf97e")
-		)
-		(pin "4"
-			(uuid "e4327e85-a494-448c-b9d7-65266f89da06")
-		)
-		(pin "3"
-			(uuid "48f10435-4491-46e0-8bb6-c37ecbc549d0")
-		)
-		(instances
-			(project "Transmitter Main Board"
-				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
-					(reference "D12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 59.69 52.07 0)
 		(unit 1)
@@ -3353,32 +3839,33 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812")
-		(at 175.26 71.12 90)
+		(lib_id "Transmitter Symbol Library:4960")
+		(at 217.17 91.44 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "f8a7d6e8-7d19-488a-87ca-4df7322f094f")
-		(property "Reference" "D14"
-			(at 165.1 77.5402 90)
+		(uuid "fc03dad8-d22c-47e1-af11-7fbb40d7a7a3")
+		(property "Reference" "IC6"
+			(at 231.14 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812"
-			(at 165.1 75.0002 90)
+		(property "Value" "4960"
+			(at 231.14 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 182.88 69.85 0)
+		(property "Footprint" "Transmitter Library:4960_ADA"
+			(at 241.3 -3.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3387,8 +3874,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 184.785 68.58 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf"
+			(at 241.3 -103.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3397,31 +3884,81 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 175.26 71.12 0)
+		(property "Description" "Adafruit Accessories NeoPixel Reverse Mount RGB LEDs - 10 Pack of SK6812-E"
+			(at 217.17 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.88"
+			(at 241.3 -303.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4960"
+			(at 241.3 -403.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Adafruit/4960?qs=pBJMDPsKWf1Q%252BqeEoLnQjA%3D%3D"
+			(at 241.3 -503.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Adafruit"
+			(at 241.3 -603.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "4960"
+			(at 241.3 -703.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
 		(pin "1"
-			(uuid "798d2512-d362-4e69-9a54-6da4f52fcd4a")
-		)
-		(pin "2"
-			(uuid "c0596baf-768f-473a-bd3d-e0a907ddbaf7")
+			(uuid "4c72b832-439c-44eb-9c44-cb725aa103c1")
 		)
 		(pin "4"
-			(uuid "ffff2e86-9e21-4a47-a142-3f802d03fff4")
+			(uuid "3deac9ab-5455-492e-915d-af1828603b64")
 		)
 		(pin "3"
-			(uuid "ec8c80cf-1b90-4fdb-89bf-4b4ef2b944a9")
+			(uuid "f9086fa6-b6f8-4c22-a73e-8395375e4f42")
+		)
+		(pin "2"
+			(uuid "1b865d9f-9d58-4e44-9558-fc3bf353c2ec")
 		)
 		(instances
 			(project "Transmitter Main Board"
 				(path "/ab8869b7-f9fd-4421-ad1e-15a14ea7e3d2/1af7f400-85d1-45c7-9de1-8b0a1cc91110"
-					(reference "D14")
+					(reference "IC6")
 					(unit 1)
 				)
 			)
