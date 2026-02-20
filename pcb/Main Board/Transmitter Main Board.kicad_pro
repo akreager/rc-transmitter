@@ -501,7 +501,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.381,
+        "clearance": 0.254,
         "diff_pair_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -534,6 +534,10 @@
       {
         "netclass": "Default",
         "pattern": ""
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+3.3V"
       }
     ]
   },
