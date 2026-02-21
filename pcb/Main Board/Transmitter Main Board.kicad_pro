@@ -533,11 +533,15 @@
       },
       {
         "netclass": "Power",
-        "pattern": "Net-(U2-Out)"
+        "pattern": "RF_PWR"
       },
       {
         "netclass": "Power",
         "pattern": "+3.3V"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "3V3"
       }
     ]
   },
